@@ -256,7 +256,7 @@ func (t *SimpleChaincode) init_marble(stub shim.ChaincodeStubInterface, args []s
 	var err error
 
 	//   0       1       2     3
-	// "asdf", "blue", "35", "bob"
+	// "asdf", "haha", "35", "bob"
 	if len(args) != 4 {
 		return nil, errors.New("Incorrect number of arguments. Expecting 4")
 	}
@@ -362,7 +362,7 @@ func (t *SimpleChaincode) open_trade(stub shim.ChaincodeStubInterface, args []st
 	var trade_away Description
 	
 	//	0        1      2     3      4      5       6
-	//["bob", "blue", "16", "red", "16"] *"blue", "35*
+	//["bob", "haha", "16", "red", "16"] *"haha", "35*
 	if len(args) < 5 {
 		return nil, errors.New("Incorrect number of arguments. Expecting like 5?")
 	}
